@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Python Language</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* About Python Section Styles */
+        #about-python {
+            padding: 50px 20px;
+            background-color: #F3F4F6;
+        }
+
+        .about-python-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .about-python-container h1 {
+            font-size: 40px;
+            color: #2B547E;
+            margin-bottom: 20px;
+        }
+
+        .about-python-container p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #2B547E;
+        }
+
+        .about-sections {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            gap: 30px;
+        }
+
+        .about-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .about-box i {
+            color: #2B547E;
+            margin-bottom: 20px;
+        }
+
+        .about-box h3 {
+            font-size: 24px;
+            color: #2B547E;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .about-box:hover {
+            transform: scale(1.05);
+        }
+
+        .syntax-section, .features-section, .examples-section {
+            margin-top: 60px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .syntax-section h2, .features-section h2, .examples-section h2 {
+            font-size: 32px;
+            color: #2B547E;
+            margin-bottom: 20px;
+        }
+
+        .syntax-section pre, .examples-section pre {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 992px) {
+            .about-sections {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .about-box {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #about-python {
+                padding: 30px 10px;
+            }
+
+            .about-python-container h1 {
+                font-size: 32px;
+            }
+
+            .about-python-container p {
+                font-size: 16px;
+            }
+
+            .syntax-section h2, .features-section h2, .examples-section h2 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- About Python Section -->
+    <div id="about-python">
+        <div class="about-python-container">
+            <h1>Introduction</h1>
+            <p>Python is a versatile and high-level programming language created by Guido van Rossum and first released in 1991. Known for its simplicity and readability, Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming. It is widely used in web development, data analysis, artificial intelligence, scientific computing, and more.</p>
+
+            <div class="syntax-section">
+                <h2>Syntax and Basics</h2>
+                <pre>
+# Print "Hello, World!"
+print("Hello, World!")
+
+# Define a function
+def greet(name):
+    return f"Hello, {name}!"
+
+# Call the function
+print(greet("Alice"))
+
+# Conditional Statements
+x = 10
+if x > 5:
+    print("x is greater than 5")
+
+# Loop Example
+for i in range(5):
+    print(i)
+                </pre>
+            </div>
+
+            <div class="features-section">
+                <h2>Key Features</h2>
+                <pre>
+- Easy to Learn and Use: Python has a simple and intuitive syntax.
+
+- Interpreted Language: No need for compilation; Python code runs directly.
+
+- Extensive Libraries:
+    - NumPy and pandas for data analysis.
+    - TensorFlow and PyTorch for machine learning.
+    - Flask and Django for web development.
+
+- Dynamic Typing: No need to declare variable types.
+
+- Platform Independent: Python code can run on different operating systems.
+
+- Community Support: A large, active community for learning and troubleshooting.
+
+- Applications:
+    - Web Development
+    - Data Science
+    - Machine Learning
+    - Automation
+    - Game Development
+    - Scientific Research
+                </pre>
+            </div>
+
+            <div class="examples-section">
+                <h2>Examples</h2>
+                <pre>
+# Factorial Calculation (Using Recursion)
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print("Factorial of 5:", factorial(5))
+
+# Fibonacci Sequence (Using Iteration)
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+
+fibonacci(10)
+
+# File Handling Example
+with open("example.txt", "w") as file:
+    file.write("This is an example file.")
+
+with open("example.txt", "r") as file:
+    print(file.read())
+                </pre>
+            </div>
+
+            <div class="syntax-section">
+                <p>For comprehensive details about Python, refer to the complete guide here: <a href="./Python_Complete_Notes.pdf" target="_blank">Click to download the Python Notes</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
