@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About C lauguage</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Include external stylesheets here -->
+    
+    <!-- Embedded CSS for About Us -->
+    <style>
+        /* About Us Section Styles */
+        #about-us {
+            padding: 50px 20px;
+            background-color: #EFEAE3;
+            /* text-align: center; */
+        }
+
+        .about-us-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .about-us-container h1 {
+            font-size: 40px;
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .about-us-container p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #243B55;
+        }
+
+        .about-sections {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            gap: 30px;
+        }
+
+        .about-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            /* text-align: center; */
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .about-box i {
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .about-box h3 {
+            font-size: 24px;
+            color: #243B55;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .about-box:hover {
+            transform: scale(1.05);
+        }
+
+        .mission-section, .team-section, .vision-section {
+            margin-top: 60px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-section h2, .team-section h2, .vision-section h2 {
+            font-size: 32px;
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .mission-section pre, .vision-section pre {
+            font-size: 18px;
+            /* line-height: 1.7; */
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-sections {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .about-box {
+                width: 80%;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            #about-us {
+                padding: 30px 10px;
+            }
+
+            .about-us-container h1 {
+                font-size: 32px;
+            }
+
+            .about-us-container p {
+                font-size: 16px;
+            }
+
+            .mission-section h2, .team-section h2, .vision-section h2 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- About Us Section -->
+    <div id="about-us">
+        <div class="about-us-container">
+            <h1>Introduction</h1>
+            <p>Ruby is a high-level, interpreted, general-purpose programming language designed by Yukihiro "Matz" Matsumoto in the mid-1990s. Known for its simplicity and productivity, Ruby emphasizes human-friendly syntax and flexibility. It is dynamically typed and supports multiple programming paradigms, including object-oriented, functional, and procedural styles. Ruby is most famously associated with the Ruby on Rails framework, which revolutionized web development.
+</p>
+
+            <div class="mission-section">
+                <h2>Syntax and Details</h2>
+                <pre>
+                   # This is a comment in Ruby
+
+# Print "Hello, World!"
+puts "Hello, World!"
+
+# Define variables
+name = "Rounak Mondal"
+age = 20
+
+# String interpolation
+puts "My name is #{name} and I am #{age} years old."
+
+# Define a method
+def add_numbers(a, b)
+  return a + b
+end
+
+# Call the method
+sum = add_numbers(10, 20)
+puts "The sum of 10 and 20 is #{sum}"
+
+# Conditional statement
+if age >= 18
+  puts "You are an adult."
+else
+  puts "You are a minor."
+end
+
+# Loop example
+5.times do |i|
+  puts "This is loop iteration #{i + 1}"
+end
+}
+                    </pre>
+                
+            </div>
+
+            <div class="vision-section">
+                <h2>Key Features</h2>
+                <pre>
+                    Object-Oriented: Everything in Ruby is an object.
+Dynamic Typing: Variable types are determined at runtime.
+Interpreted Language: Executes code line by line without compilation.
+Readable Syntax: Designed to be close to natural language.
+Basic Syntax Elements:
+
+Variables:
+
+name = "Alice"
+age = 25
+is_student = true
+Data Types: Numbers, Strings, Symbols, Arrays, Hashes.
+Operators: Arithmetic (+, -, *, /), Logical (&&, ||, !), Comparison (==, <, >).
+Control Structures:
+
+if age > 18
+  puts "Adult"
+else
+  puts "Minor"
+end
+Methods:
+
+def greet(name)
+  "Hello, #{name}!"
+end
+
+puts greet("Alice")
+Object-Oriented Concepts:
+
+Class and Object:
+
+class Car
+  attr_accessor :brand, :year
+
+  def initialize(brand, year)
+    @brand = brand
+    @year = year
+  end
+
+  def details
+    "#{brand} - #{year}"
+  end
+end
+
+my_car = Car.new("Toyota", 2020)
+puts my_car.details
+Uses
+Web Development: Ruby on Rails (RoR) framework for building dynamic web applications.
+Scripting and Automation: Automating tasks and writing scripts for system administration.
+Data Processing: Tools and libraries for data manipulation.
+Prototyping: Quick prototyping of applications due to its simplicity.
+Game Development: Lightweight games using Ruby frameworks like Gosu.
+Common Inside Components
+Data Structures:
+
+Array: Ordered, indexed collection.
+
+fruits = ["apple", "banana", "cherry"]
+Hash: Key-value pairs.
+
+user = { name: "Alice", age: 25 }
+Blocks and Iterators:
+
+
+[1, 2, 3].each do |num|
+  puts num * 2
+end
+Modules:
+
+Used to group methods and constants.
+
+module MathHelper
+  def self.square(num)
+    num * num
+  end
+end
+
+puts MathHelper.square(4)
+Exception Handling:
+
+
+begin
+  result = 10 / 0
+rescue ZeroDivisionError
+  puts "Cannot divide by zero!"
+end
+Examples
+Hello World:
+
+
+puts "Hello, World!"
+Sum of Two Numbers:
+
+
+print "Enter first number: "
+num1 = gets.to_i
+print "Enter second number: "
+num2 = gets.to_i
+puts "Sum: #{num1 + num2}"
+Factorial Using Recursion:
+
+
+def factorial(n)
+  return 1 if n <= 1
+  n * factorial(n - 1)
+end
+
+puts factorial(5)
+Fibonacci Sequence:
+
+
+def fibonacci(n)
+  a, b = 0, 1
+  n.times { a, b = b, a + b }
+  a
+end
+
+10.times { |i| print "#{fibonacci(i)} " }
+Sorting an Array:
+
+
+numbers = [5, 3, 8, 1, 2]
+puts numbers.sort
+                </pre>
+            </div>
+
+            <div class="mission-section">
+                <p>If you want a more details information about it then please go full through this pdf-----><a href="./RubyNotes.pdf" target="_blank">click me to get all information regarding this topic</a>
+                </p>
+                
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
