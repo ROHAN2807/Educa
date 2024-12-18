@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About HTML</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Embedded CSS for About HTML -->
+    <style>
+        #about-html {
+            padding: 50px 20px;
+            background-color: #F8F9FA;
+        }
+
+        .about-html-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .about-html-container h1 {
+            font-size: 40px;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        .about-html-container p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        .html-sections {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            gap: 30px;
+        }
+
+        .html-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .html-box i {
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        .html-box h3 {
+            font-size: 24px;
+            color: #0056b3;
+            margin-bottom: 15px;
+        }
+
+        .html-box p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .html-box:hover {
+            transform: scale(1.05);
+        }
+
+        .structure-section, .history-section, .elements-section {
+            margin-top: 60px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .structure-section h2, .history-section h2, .elements-section h2 {
+            font-size: 32px;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        .structure-section pre, .history-section pre, .elements-section pre {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 992px) {
+            .html-sections {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .html-box {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #about-html {
+                padding: 30px 10px;
+            }
+
+            .about-html-container h1 {
+                font-size: 32px;
+            }
+
+            .about-html-container p {
+                font-size: 16px;
+            }
+
+            .structure-section h2, .history-section h2, .elements-section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- About HTML Section -->
+    <div id="about-html">
+        <div class="about-html-container">
+            <h1>Introduction</h1>
+            <p>HTML (HyperText Markup Language) is the standard language used to create and design webpages. It was created by Tim Berners-Lee in 1991 and serves as the backbone of the World Wide Web, providing the structure for websites. HTML uses a system of tags to define and organize content, including headings, paragraphs, links, images, and more.</p>
+
+            <div class="structure-section">
+                <h2>Basic Structure</h2>
+                <pre>
+&lt;!DOCTYPE html&gt;  <!-- Defines the document type -->
+&lt;html&gt;           <!-- Root element -->
+    &lt;head&gt;       <!-- Metadata -->
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;       <!-- Visible content -->
+        &lt;h1&gt;Hello World&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+
+            <div class="history-section">
+                <h2>Key Features</h2>
+                <pre>
+- Platform-Independent: Runs on any browser or operating system.
+- Tag-Based Language: Uses tags to define structure and style.
+- Easy Integration: Can be combined with CSS and JavaScript.
+- Accessibility Support: Includes semantic elements for screen readers.
+- Multimedia: Supports embedding images, videos, and audio.
+
+Examples of Tags:
+    - Structural Tags: &lt;html&gt;, &lt;head&gt;, &lt;body&gt;
+    - Text Formatting: &lt;h1&gt;-&lt;h6&gt;, &lt;p&gt;, &lt;b&gt;, &lt;i&gt;
+    - Multimedia: &lt;img&gt;, &lt;audio&gt;, &lt;video&gt;
+    - Links and Navigation: &lt;a&gt;, &lt;nav&gt;
+                </pre>
+            </div>
+
+            <div class="elements-section">
+                <h2>Commonly Used Elements</h2>
+                <pre>
+- &lt;div&gt; and &lt;span&gt;: Used for grouping and styling content.
+- &lt;form&gt;: Enables user input with elements like &lt;input&gt;, &lt;button&gt;, and &lt;textarea&gt;.
+- &lt;table&gt;: Creates tables for structured data.
+- &lt;ul&gt; and &lt;ol&gt;: Used for unordered and ordered lists, respectively.
+- &lt;iframe&gt;: Embeds another HTML page within a page.
+
+Example:
+&lt;div&gt;
+    &lt;p&gt;This is inside a div.&lt;/p&gt;
+&lt;/div&gt;
+                </pre>
+            </div>
+
+            <div class="structure-section">
+                <p>To dive deeper into HTML, check out this detailed PDF guide: <a href="./HTML_Complete_Notes.pdf" target="_blank">HTML Complete Guide</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

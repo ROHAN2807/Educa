@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About DSA</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Include external stylesheets here -->
+    
+    <!-- Embedded CSS for About Us -->
+    <style>
+        /* About Us Section Styles */
+        #about-us {
+            padding: 50px 20px;
+            background-color: #EFEAE3;
+            /* text-align: center; */
+        }
+
+        .about-us-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .about-us-container h1 {
+            font-size: 40px;
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .about-us-container p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #243B55;
+        }
+
+        .about-sections {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            gap: 30px;
+        }
+
+        .about-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            /* text-align: center; */
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .about-box i {
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .about-box h3 {
+            font-size: 24px;
+            color: #243B55;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .about-box:hover {
+            transform: scale(1.05);
+        }
+
+        .mission-section, .team-section, .vision-section {
+            margin-top: 60px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-section h2, .team-section h2, .vision-section h2 {
+            font-size: 32px;
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .mission-section pre, .vision-section pre {
+            font-size: 18px;
+            /* line-height: 1.7; */
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-sections {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .about-box {
+                width: 80%;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            #about-us {
+                padding: 30px 10px;
+            }
+
+            .about-us-container h1 {
+                font-size: 32px;
+            }
+
+            .about-us-container p {
+                font-size: 16px;
+            }
+
+            .mission-section h2, .team-section h2, .vision-section h2 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- About Us Section -->
+    <div id="about-us">
+        <div class="about-us-container">
+            <h1>Introduction</h1>
+            <p>Data Structures and Algorithms (DSA) form the foundation of computer science and programming. Data Structures are ways to organize and store data efficiently, while Algorithms are step-by-step procedures to perform tasks or solve problems. DSA is crucial for writing optimized, scalable, and high-performance code. It plays a significant role in problem-solving, competitive programming, and system design.</p>
+
+            <div class="mission-section">
+                <h2>Syntax and Details</h2>
+                <pre>
+                   Data Structures:
+
+Linear Structures: Data is arranged in a sequential order.
+Examples: Arrays, Linked Lists, Stacks, Queues.
+Non-Linear Structures: Data is arranged hierarchically or in a non-linear order.
+Examples: Trees, Graphs, Heaps.
+Algorithms:
+
+Time Complexity: Measures algorithm efficiency based on input size (O(n), O(log n), etc.).
+Space Complexity: Measures memory usage of an algorithm.
+Types:
+Searching: Linear Search, Binary Search.
+Sorting: Bubble Sort, Quick Sort, Merge Sort.
+Graph Algorithms: BFS, DFS, Dijkstra’s Algorithm.
+Common Terminologies:
+
+Big-O Notation: Describes the worst-case performance.
+Recursion: A function calling itself.
+Dynamic Programming: Solves problems by breaking them into subproblems and reusing results.
+
+                    </pre>
+                
+            </div>
+
+            <div class="vision-section">
+                <h2>Key Features</h2>
+                <pre>
+                    Efficient Data Management: Optimizes data storage and retrieval in software systems.
+Problem Solving: Used in competitive programming, coding interviews, and complex problem scenarios.
+Database Systems: Implementation of indexing and search trees.
+Networking: Routing algorithms like Dijkstra’s and spanning trees.
+Real-Time Applications: Priority queues for task scheduling.
+Common Inside Components
+Linear Data Structures:
+
+Array: Fixed-size, indexed collection of elements.
+
+int arr[5] = {1, 2, 3, 4, 5};
+Linked List: Dynamic data structure where elements (nodes) are linked using pointers.
+Stack: LIFO (Last In, First Out) structure.
+Operations: push, pop, peek.
+Queue: FIFO (First In, First Out) structure.
+Types: Circular Queue, Priority Queue.
+Non-Linear Data Structures:
+
+Tree:
+Binary Tree, Binary Search Tree, AVL Tree.
+Graph:
+Represented using adjacency matrix or list.
+Algorithms:
+
+Sorting:
+
+def bubble_sort(arr):
+    for i in range(len(arr)):
+        for j in range(len(arr) - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+Searching:
+Linear Search: Iteratively searches each element.
+Binary Search: Efficient search for sorted arrays.
+Dynamic Programming and Greedy Algorithms:
+
+Knapsack Problem.
+Fibonacci Sequence Using DP.
+Examples
+Stack Implementation:
+
+class Stack:
+    def _init_(self):
+        self.stack = []
+
+    def push(self, item):
+        self.stack.append(item)
+
+    def pop(self):
+        if not self.is_empty():
+            return self.stack.pop()
+        return "Stack is empty"
+
+    def is_empty(self):
+        return len(self.stack) == 0
+
+s = Stack()
+s.push(10)
+s.push(20)
+print(s.pop())  # Output: 20
+Binary Search:
+
+def binary_search(arr, target):
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+nums = [1, 3, 5, 7, 9]
+print(binary_search(nums, 5))  # Output: 2
+Breadth-First Search (BFS):
+
+from collections import deque
+
+def bfs(graph, start):
+    visited = set()
+    queue = deque([start])
+
+    while queue:
+        node = queue.popleft()
+        if node not in visited:
+            visited.add(node)
+            print(node, end=" ")
+            queue.extend(graph[node])
+
+graph = {
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F'],
+    'D': [],
+    'E': [],
+    'F': []
+}
+bfs(graph, 'A')  # Output: A B C D E F
+Merge Sort:
+
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
+        left = arr[:mid]
+        right = arr[mid:]
+
+        merge_sort(left)
+        merge_sort(right)
+
+        i = j = k = 0
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                arr[k] = left[i]
+                i += 1
+            else:
+                arr[k] = right[j]
+                j += 1
+            k += 1
+
+        while i < len(left):
+            arr[k] = left[i]
+            i += 1
+            k += 1
+
+        while j < len(right):
+            arr[k] = right[j]
+            j += 1
+            k += 1
+
+arr = [12, 11, 13, 5, 6, 7]
+merge_sort(arr)
+print(arr)  # Output: [5, 6, 7, 11, 12, 13]
+Dijkstra’s Algorithm:
+
+import heapq
+
+def dijkstra(graph, start):
+    pq = [(0, start)]  # (distance, node)
+    distances = {node: float('infinity') for node in graph}
+    distances[start] = 0
+
+    while pq:
+        current_distance, current_node = heapq.heappop(pq)
+
+        for neighbor, weight in graph[current_node]:
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(pq, (distance, neighbor))
+
+    return distances
+
+graph = {
+    'A': [('B', 1), ('C', 4)],
+    'B': [('A', 1), ('C', 2), ('D', 6)],
+    'C': [('A', 4), ('B', 2), ('D', 3)],
+    'D': [('B', 6), ('C', 3)]
+}
+print(dijkstra(graph, 'A'))  # Output: {'A': 0, 'B': 1, 'C': 3, 'D': 6}
+
+                </pre>
+            </div>
+
+            <div class="mission-section">
+                <p>If you want a more details information about it then please go full through this pdf-----><a href="./database-systems.pdf" target="_blank">click me to get all information regarding this topic</a>
+                </p>
+                
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

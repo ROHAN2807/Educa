@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Java</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #about-java {
+            padding: 50px 20px;
+            background-color: #EFEAE3;
+        }
+
+        .java-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .java-container h1 {
+            font-size: 40px;
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .java-container p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #243B55;
+        }
+
+        .section {
+            margin-top: 60px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 32px;
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .section pre {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            #about-java {
+                padding: 30px 10px;
+            }
+
+            .java-container h1 {
+                font-size: 32px;
+            }
+
+            .java-container p {
+                font-size: 16px;
+            }
+
+            .section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="about-java">
+        <div class="java-container">
+            <h1>Introduction</h1>
+            <p>Java is a versatile, object-oriented programming language developed by James Gosling and released by Sun Microsystems in 1995. Known for its "Write Once, Run Anywhere" capability, Java is widely used for developing platform-independent applications, including web, mobile, and enterprise solutions.</p>
+
+            <div class="section">
+                <h2>Syntax and Basic Program</h2>
+                <pre>
+// Hello World Program in Java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); // Prints Hello, World! to the console
+    }
+}
+                </pre>
+            </div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <pre>
+<- Platform Independence: Code compiled to bytecode can run on any Java Virtual Machine (JVM).
+<- Object-Oriented: Emphasizes objects and classes for modular, reusable code.
+<- Rich API: Includes libraries for data structures, networking, file I/O, and more.
+<- Security: Provides built-in security features like bytecode verification and sandboxing.
+<- Automatic Memory Management: Garbage collector handles memory deallocation.
+<- Multithreading: Allows concurrent execution of multiple threads for efficient use of resources.
+                </pre>
+            </div>
+
+            <div class="section">
+                <h2>Examples of Java Programs</h2>
+                <pre>
+Q. Program to Check if a Number is Even or Odd:
+
+import java.util.Scanner;
+
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        if (number % 2 == 0) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }
+    }
+}
+
+Q. Program to Find the Factorial of a Number:
+
+public class Factorial {
+    public static int factorial(int n) {
+        if (n == 0 || n == 1) return 1;
+        return n * factorial(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int num = 5;
+        System.out.println("Factorial of " + num + " is: " + factorial(num));
+    }
+}
+
+Q. Swap Two Numbers Using a Temporary Variable:
+
+public class SwapNumbers {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
+}
+
+Q. Program to Demonstrate Multithreading:
+
+class MultithreadDemo extends Thread {
+    public void run() {
+        try {
+            System.out.println("Thread " + Thread.currentThread().getId() + " is running.");
+        } catch (Exception e) {
+            System.out.println("Exception caught");
+        }
+    }
+}
+
+public class Multithreading {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            MultithreadDemo thread = new MultithreadDemo();
+            thread.start();
+        }
+    }
+}
+                </pre>
+            </div>
+
+            <div class="section">
+                <p>For more comprehensive details, download the complete guide <a href="./Java_Complete_Notes (1).pdf" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

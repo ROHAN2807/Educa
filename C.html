@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About C lauguage</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Include external stylesheets here -->
+    
+    <!-- Embedded CSS for About Us -->
+    <style>
+        /* About Us Section Styles */
+        #about-us {
+            padding: 50px 20px;
+            background-color: #EFEAE3;
+            /* text-align: center; */
+        }
+
+        .about-us-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .about-us-container h1 {
+            font-size: 40px;
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .about-us-container p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #243B55;
+        }
+
+        .about-sections {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            gap: 30px;
+        }
+
+        .about-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            /* text-align: center; */
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .about-box i {
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .about-box h3 {
+            font-size: 24px;
+            color: #243B55;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .about-box:hover {
+            transform: scale(1.05);
+        }
+
+        .mission-section, .team-section, .vision-section {
+            margin-top: 60px;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-section h2, .team-section h2, .vision-section h2 {
+            font-size: 32px;
+            color: #243B55;
+            margin-bottom: 20px;
+        }
+
+        .mission-section pre, .vision-section pre {
+            font-size: 18px;
+            /* line-height: 1.7; */
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-sections {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .about-box {
+                width: 80%;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            #about-us {
+                padding: 30px 10px;
+            }
+
+            .about-us-container h1 {
+                font-size: 32px;
+            }
+
+            .about-us-container p {
+                font-size: 16px;
+            }
+
+            .mission-section h2, .team-section h2, .vision-section h2 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- About Us Section -->
+    <div id="about-us">
+        <div class="about-us-container">
+            <h1>Introduction</h1>
+            <p>C is a powerful general-purpose programming language that was developed by Dennis Ritchie at Bell Labs in 1972. It is widely used for system programming, developing operating systems, embedded systems, and applications requiring high performance. C provides low-level access to memory and operates close to the hardware, making it highly efficient.</p>
+
+            <div class="mission-section">
+                <h2>Syntax and Details</h2>
+                <pre>
+                    #include &lt;stdio.h&gt;  // Preprocessor directive to include standard I/O functions
+                    
+                    int main() {
+                        printf(&quot;Hello, World!&quot;\n);  // Output statement to print Hello, World!
+                        return 0;  // Exit the program
+                    }
+                    </pre>
+                
+            </div>
+
+            <div class="vision-section">
+                <h2>Key Features</h2>
+                <pre>
+                    <-Case-Sensitive  : Variable names and keywords are case-sensitive.
+                    
+                    <-Semicolon ;  : Marks the end of a statement.
+                    
+                    <-Preprocessor Directives  : Start with # and are executed before the 
+                    compilation, e.g., #include, #define.
+                    
+                    <-Functions  : The building blocks of C programs. Execution starts from main().
+                    
+                    <-Data Types  :
+                                 Primitive: int, float, char, double
+                                 Derived: Arrays, Pointers, Structures, Unions
+                                 Void: No data type, often used in functions with no return value.
+
+                    <-Control Structures:
+                                Conditional Statements: if, else, switch
+                                Loops: for, while, do-while
+
+                    <-Operators:
+                                Arithmetic: +, -, *, /, %
+                                Relational: ==, !=, <, >, <=, >=
+                                Logical: &&, ||, !
+
+                    <-Uses:-
+                    
+                    ~System Programming : Operating systems like Linux, Unix.
+                    ~Embedded Systems : Microcontroller and microprocessor programming.
+                    ~Game Development : Rendering engines and performance-critical components.
+                    ~Compilers : C is used to develop compilers for other programming languages.
+                    ~Database Systems : Examples include MySQL.
+                    
+                    <-Common Inside Components:-
+                    
+                    Standard Libraries:
+                    stdio.h: Input/output functions (e.g., printf, scanf)
+                    stdlib.h: General utilities (e.g., memory allocation with malloc, free)
+                    string.h: String manipulation (e.g., strlen, strcpy)
+                    
+                    Memory Management:
+                    malloc, calloc, realloc, free
+                    
+                    Pointers:
+                    Enable dynamic memory allocation and manipulation of variables directly.
+                    Example: int *ptr = &var;
+                    
+                    Structures and Unions:
+                    Structure: Groups different data types together.
+                    
+                    struct Point {
+                        int x;
+                        int y;
+                    };
+                    
+                    Union: Memory-efficient grouping of variables.
+                    
+                    Examples:
+                    
+                    Q.Hello World Program:
+                    
+                    #include &lt;stdio.h&gt;
+                    
+                    int main() {
+                        printf("Hello, World!\n");
+                        return 0;
+                    }
+
+                    Q.Finding the Largest of Three Numbers:
+                    
+                    #include &lt;stdio.h&gt;
+                    
+                    int main() {
+                        int a, b, c, largest;
+                    
+                        printf("Enter three numbers: ");
+                        scanf("%d %d %d", &a, &b, &c);
+                    
+                        largest = (a > b && a > c) ? a : (b > c ? b : c);
+                    
+                        printf("The largest number is %d\n", largest);
+                        return 0;
+                    }
+                    
+                    Q.Factorial of a Number (Using Recursion):
+                    
+                    #include &lt;stdio.h&gt;
+                    
+                    int factorial(int n) {
+                        if (n == 0 || n == 1) return 1;
+                        return n * factorial(n - 1);
+                    }
+                    
+                    int main() {
+                        int num;
+                    
+                        printf("Enter a number: ");
+                        scanf("%d", &num);
+                    
+                        printf("Factorial of %d is %d\n", num, factorial(num));
+                        return 0;
+                    }
+                    
+                    Q.Swap Two Numbers Using Pointers:
+                    
+                    #include &lt;stdio.h&gt;
+                    
+                    void swap(int *a, int *b) {
+                        int temp = *a;
+                        *a = *b;
+                        *b = temp;
+                    }
+                    
+                    int main() {
+                        int x = 10, y = 20;
+                    
+                        printf("Before swapping: x = %d, y = %d\n", x, y);
+                        swap(&x, &y);
+                        printf("After swapping: x = %d, y = %d\n", x, y);
+                    
+                        return 0;
+                    }
+                </pre>
+            </div>
+
+            <div class="mission-section">
+                <p>If you want a more details information about it then please go full through this pdf-----><a href="./C_Complete_Notes.pdf" target="_blank">click me to get all information regarding this topic</a>
+                </p>
+                
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
